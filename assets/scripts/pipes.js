@@ -4,7 +4,7 @@ import { mario, Screens } from "./screens";
 import { gameThemeSound, lostLife } from "./soundEffects";
 
 const pipesSprite = new Image();
-pipesSprite.src = './assets/sprites/pipes-sprite.png';
+pipesSprite.src = '/public/sprites/pipes-sprite.png';
 
 const canvas = document.querySelector('canvas');
 const ctx = canvas.getContext('2d');

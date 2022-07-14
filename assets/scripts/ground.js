@@ -1,5 +1,5 @@
 const groundSprite = new Image();
-groundSprite.src = './assets/sprites/ground-sprite.png'
+groundSprite.src = '/public/sprites//ground-sprite.png'
 
 const canvas = document.querySelector('canvas');
 const ctx = canvas.getContext('2d');
