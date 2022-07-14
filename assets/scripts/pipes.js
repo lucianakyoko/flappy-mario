@@ -1,6 +1,7 @@
 import { frames } from "../../main";
 import { changeScreen } from "./changeScreen";
 import { mario, Screens } from "./screens";
+import { gameThemeSound, lostLife } from "./soundEffects";
 
 const pipesSprite = new Image();
 pipesSprite.src = './assets/sprites/pipes-sprite.png';
@@ -97,6 +98,10 @@ export class Pipes {
       pair.x = pair.x - 2;
 
       if(this.colision(pair)) {
+        lostLife.play();
+        gameThemeSound.pause();
+        gameThemeSound.currentTime = 0;
+
         pipesCollision = true;
         changeScreen(Screens.GAME_OVER);
       };

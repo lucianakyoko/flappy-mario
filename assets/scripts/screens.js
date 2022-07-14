@@ -5,6 +5,7 @@ import { Ground } from "./ground";
 import { Mario } from "./mario";
 import { Pipes } from "./pipes";
 import { Score } from "./score";
+import { gameThemeSound } from "./soundEffects";
 import { StartMessage } from "./startMessage";
 
 export let mario = new Mario();
@@ -36,6 +37,7 @@ export const Screens = {
     },
     click() {
       changeScreen(Screens.GAME);
+      gameThemeSound.play();
     }
   },
 
@@ -58,6 +60,7 @@ export const Screens = {
     },
     click() {
       mario.fly();
+
     },
   },
 

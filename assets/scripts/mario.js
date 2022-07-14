@@ -2,6 +2,7 @@ import { frames } from "../../main";
 import { changeScreen } from "./changeScreen";
 import { pipesCollision } from "./pipes";
 import { ground, Screens } from "./screens";
+import { gameThemeSound, lostLife } from "./soundEffects";
 
 const marioSprite = new Image();
 marioSprite.src = './assets/sprites/mario-sprite.png';
@@ -95,7 +96,11 @@ export class Mario {
   };
 
   update() {
-    if(this.collision(this, ground)) {     
+    if(this.collision(this, ground)) {
+      lostLife.play();
+      gameThemeSound.pause();
+      gameThemeSound.currentTime = 0;
+
       changeScreen(Screens.GAME_OVER);
     };
 
