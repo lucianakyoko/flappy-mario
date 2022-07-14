@@ -1,7 +1,6 @@
 import { activeScreen, changeScreen } from "./assets/scripts/changeScreen";
 import { Screens } from "./assets/scripts/screens";
 
-
 export let frames = 0;
 
 const animate = () => {
@@ -11,6 +10,18 @@ const animate = () => {
   frames = frames + 1;
   requestAnimationFrame(animate);
 };
+
+window.addEventListener('click', () => {
+  if(activeScreen.click()) activeScreen.click();
+});
+
+window.addEventListener('touchstart', () => {
+  if(activeScreen.click()) activeScreen.click();
+});
+
+window.addEventListener('keydown', () => {
+  if(activeScreen.click()) activeScreen.click();
+});
 
 changeScreen(Screens.START);
 animate();
