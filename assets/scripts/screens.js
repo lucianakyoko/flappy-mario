@@ -1,6 +1,8 @@
+import { Background } from "./background";
 import { Mario } from "./mario";
 
 export let mario = new Mario();
+const background = new Background();
 
 
 export const Screens = {
@@ -10,6 +12,7 @@ export const Screens = {
     },
     draw() {
       mario.draw();
+      background.draw();
     }
   }
 };
