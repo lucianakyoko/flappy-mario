@@ -1,16 +1,20 @@
 import { Background } from "./background";
 import { changeScreen } from "./changeScreen";
+import { Gameover } from "./gameOver";
 import { Ground } from "./ground";
 import { Mario } from "./mario";
 import { Pipes } from "./pipes";
+import { Score } from "./score";
 import { StartMessage } from "./startMessage";
 
 export let mario = new Mario();
 export let ground = new Ground();
 export let pipes = new Pipes();
+export let score = new Score();
 
 const background = new Background();
 const startMessage = new StartMessage();
+let gameOver = new Gameover();
 
 
 export const Screens = {
@@ -37,18 +41,20 @@ export const Screens = {
 
   GAME: {
     initialize() {
-
+      score = new Score();
     },
     draw() {
       background.draw();
       mario.draw();
       pipes.draw();
+      score.draw();
       ground.draw();
     },
     update() {
       pipes.update();
       ground.update();
       mario.update();
+      score.update();
     },
     click() {
       mario.fly();
@@ -56,11 +62,15 @@ export const Screens = {
   },
 
   GAME_OVER: {
-    initialize() {},
+    initialize() {
+      gameOver = new Gameover();
+    },
     draw() {
       background.draw();
       ground.draw();
       mario.draw();
+      gameOver.draw();
+      
     },
     click() {
       changeScreen(Screens.START);
