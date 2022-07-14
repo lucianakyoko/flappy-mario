@@ -2,10 +2,12 @@ import { Background } from "./background";
 import { changeScreen } from "./changeScreen";
 import { Ground } from "./ground";
 import { Mario } from "./mario";
+import { Pipes } from "./pipes";
 import { StartMessage } from "./startMessage";
 
 export let mario = new Mario();
 export let ground = new Ground();
+export let pipes = new Pipes();
 
 const background = new Background();
 const startMessage = new StartMessage();
@@ -16,6 +18,8 @@ export const Screens = {
     initialize() {
       mario = new Mario();
       ground = new Ground();
+      pipes = new Pipes();
+      pipes.reset();
     },
     draw() {
       background.draw();
@@ -38,13 +42,32 @@ export const Screens = {
     draw() {
       background.draw();
       mario.draw();
+      pipes.draw();
       ground.draw();
     },
     update() {
+      pipes.update();
       ground.update();
-      // mario.update();
+      mario.update();
     },
-    click() {},
+    click() {
+      mario.fly();
+    },
+  },
+
+  GAME_OVER: {
+    initialize() {},
+    draw() {
+      background.draw();
+      ground.draw();
+      mario.draw();
+    },
+    click() {
+      changeScreen(Screens.START);
+    },
+    update() {
+      ground.update();
+    }
   }
 };
 
