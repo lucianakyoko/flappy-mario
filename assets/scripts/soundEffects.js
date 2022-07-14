@@ -1,8 +1,8 @@
 export const lostLife = new Audio();
-lostLife.src = './assets/sounds/lost_life.wav';
+lostLife.src = './assets/soundEffects/lost_life.wav';
 
 export const flySound = new Audio();
-flySound.src = './assets/sounds/fly.wav';
+flySound.src = './assets/soundEffects/fly.wav';
 
 export const gameThemeSound = new Audio();
-gameThemeSound.src = './assets/sounds/theme.wav';
+gameThemeSound.src = './assets/soundEffects/theme.mp3';
