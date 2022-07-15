@@ -23,10 +23,6 @@ canvas {
   margin: 0 auto;
 }
 
-canvas:hover {
-  cursor: pointer;
-}
-
 footer {
   width: 100%;
 

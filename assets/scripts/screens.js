@@ -17,7 +17,6 @@ const background = new Background();
 const startMessage = new StartMessage();
 let gameOver = new Gameover();
 
-
 export const Screens = {
   START: {
     initialize() {
@@ -37,10 +36,9 @@ export const Screens = {
     },
     click() {
       changeScreen(Screens.GAME);
-      gameThemeSound.play();
     }
   },
-
+  
   GAME: {
     initialize() {
       score = new Score();
@@ -51,6 +49,7 @@ export const Screens = {
       pipes.draw();
       score.draw();
       ground.draw();
+      gameThemeSound.play();
     },
     update() {
       pipes.update();
@@ -60,7 +59,6 @@ export const Screens = {
     },
     click() {
       mario.fly();
-
     },
   },
 
@@ -73,7 +71,6 @@ export const Screens = {
       ground.draw();
       mario.draw();
       gameOver.draw();
-      
     },
     click() {
       changeScreen(Screens.START);
