@@ -6,8 +6,9 @@
 
 <p align="center">
   <a href="https://flappy-mario.vercel.app/">Jogar</a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#tecnologias">Tecnologias</a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#jogabilidade">Jogabilidade</a> &nbsp;&nbsp;&nbsp;
+  <a href="#-sobre">Sobre</a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-tecnologias">Tecnologias</a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-jogabilidade">Jogabilidade</a> &nbsp;&nbsp;&nbsp;
 </p>
 
 ---
@@ -27,6 +28,12 @@ Flappy Mario foi desenvolvido com as seguintes tecnologias e ferramentas:
 ## 🎮 Jogabilidade
 O objetivo do jogo é fazer o Super Mario passar entres os dois canos. Caso o Mario esbarre em um dos canos ou caia no chão, você perde.
 
+<p>
   📱 pelo celular: basta tocar na tela do seu smartphone para manter o Mario flutuando.
+</p>
+<p>
   💻 pelo desktop/notebook: funciona com a maioria das teclas do seu teclado.
+</p>
+<p>
   🐭 você também pode usar o clique do seu mouse.
+</p>
