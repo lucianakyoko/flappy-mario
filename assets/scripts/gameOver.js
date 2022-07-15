@@ -1,7 +1,7 @@
 import { passedTimes } from "./pipes";
 
 const gameoverSprite = new Image();
-gameoverSprite.src = '/public/sprites/gameOver-sprite.png';
+gameoverSprite.src = '/sprites/gameOver-sprite.png';
 
 const canvas = document.querySelector('canvas');
 const ctx = canvas.getContext('2d');

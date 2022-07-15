@@ -1,5 +1,5 @@
 const startMessageSprite = new Image();
-startMessageSprite.src = '/public/sprites/startMessage-sprite.png';
+startMessageSprite.src = '/startMessage-sprite.png';
 
 const canvas = document.querySelector('canvas');
 const ctx = canvas.getContext('2d');

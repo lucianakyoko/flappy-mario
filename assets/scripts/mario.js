@@ -5,10 +5,10 @@ import { ground, Screens } from "./screens";
 import { gameThemeSound, lostLife } from "./soundEffects";
 
 const marioSprite = new Image();
-marioSprite.src = '/public/sprites/mario-sprite.png';
+marioSprite.src = '/sprites/mario-sprite.png';
 
 const lostSprite = new Image();
-lostSprite.src = '/public/sprites/marioOver-sprite.png';
+lostSprite.src = '/sprites/marioOver-sprite.png';
 
 const canvas = document.querySelector('canvas');
 const ctx = canvas.getContext('2d');
