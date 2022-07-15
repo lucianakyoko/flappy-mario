@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./.github/flappy-mario.jpg" alt="Preview do jogo Flappy Mario" width="80%"/>
+  <img src="./.github/flappy-mario.jpg" alt="Preview do jogo Flappy Mario"/>
 </p>
 
 ---
