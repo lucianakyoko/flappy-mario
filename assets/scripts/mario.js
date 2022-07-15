@@ -2,7 +2,7 @@ import { frames } from "../../main";
 import { changeScreen } from "./changeScreen";
 import { pipesCollision } from "./pipes";
 import { ground, Screens } from "./screens";
-import { gameThemeSound, lostLife } from "./soundEffects";
+import { flySound, gameThemeSound, lostLife } from "./soundEffects";
 
 const marioSprite = new Image();
 marioSprite.src = '/sprites/mario-sprite.png';
@@ -80,6 +80,7 @@ export class Mario {
   
   fly() {
     this.speed = -this.jump;
+    flySound.play();
   };
 
   updateFrame() {
