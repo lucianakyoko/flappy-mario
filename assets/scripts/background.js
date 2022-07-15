@@ -1,5 +1,5 @@
 const backgroundSprite = new Image();
-backgroundSprite.src = '/public/sprites/background-sprite.png';
+backgroundSprite.src = '/sprites/background-sprite.png';
 
 const canvas = document.querySelector('canvas');
 const ctx = canvas.getContext('2d');
