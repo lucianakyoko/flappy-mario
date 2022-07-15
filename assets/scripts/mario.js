@@ -41,7 +41,7 @@ export class Mario {
 
     this.speed = 0;
     this.gravity = 0.25;
-    this.jump = 4.6;
+    this.jump = 3.8;
   };
 
   draw() {
